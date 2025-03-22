@@ -31,7 +31,7 @@ function handleSubmit(event) {
   event.preventDefault();
   if (formData.email && formData.message) {
     console.log(formData);
-    localStorage.removeIte(LOCALSTORAGE_KEY);
+    localStorage.removeItem(LOCALSTORAGE_KEY);
     formData.email = '';
     formData.message = '';
     form.reset();
