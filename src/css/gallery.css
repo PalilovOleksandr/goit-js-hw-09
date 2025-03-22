@@ -1,0 +1,32 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.gallery-item {
+  max-width: calc((100% - 48px) / 3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover {
+  transform: scale(1.03);
+}
+.sl-overlay {
+  background-color: #000000 !important;
+}
+
+.sl-next,
+.sl-prev,
+.sl-close {
+  color: #ffffff !important;
+  transition: transform 250ms;
+}
+
+.sl-next:hover,
+.sl-prev:hover,
+.sl-close:hover {
+  transform: scale(1.2);
+}
